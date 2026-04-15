@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mi Web</title>
+<title>Amelie Carrillo - Travel in Europe</title>
+
+<!-- Google Font (FÁCIL) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #89f7fe, #66a6ff);
+    margin: 0;
     text-align: center;
 }
 
-/* Fuente personalizada */
-@font-face {
-    font-family: "MiFuente";
-    src: url("fuente.woff");
+.container {
+    background: white;
+    margin: 40px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 
 h1 {
-    font-family: "MiFuente";
+    font-size: 45px;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+img {
+    border-radius: 12px;
+    margin: 10px;
+    max-width: 90%;
+}
+
+p {
+    font-size: 16px;
 }
 </style>
 
@@ -25,25 +48,58 @@ h1 {
 
 <body>
 
-<h1>Amelie Carrillo García</h1>
+<div class="container">
 
-<!-- Imagen -->
-<h2>Imagen</h2>
-<img src="budapest.jpg" width="300">
+<h1>Amelie Carrillo</h1>
+<p>Exploring Europe through images, sound and media</p>
+
+<!-- PHOTO -->
+<h2>📸 Travel Photo</h2>
+<img src="budapest.jpg">
+<p>
+JPG format: compressed image, good quality with smaller file size. Ideal for photography.<br>
+HDR image (hdr.jpg): High Dynamic Range allows better light and color details, making photos look more realistic.
+</p>
+
+<img src="hdr.jpg">
+
+<!-- GRAPHICS -->
+<h2>🎨 Graphics</h2>
+<img src="graph.webp" width="300">
+<img src="logo.png" width="200">
+<p>
+WEBP: modern format, smaller size with high quality (used for web performance).<br>
+PNG: high quality image with transparency support, ideal for logos.<br>
+Graphics formats are useful for design elements and visual communication.
+</p>
 
 <!-- GIF -->
-<h2>GIF</h2>
+<h2>🎞️ Animation</h2>
 <img src="travel.gif" width="300">
+<p>
+GIF: supports animation, commonly used for short loops and visual effects.
+</p>
 
-<!-- Audio -->
-<h2>Audio</h2>
+<!-- AUDIO -->
+<h2>🔊 Sound</h2>
 <audio controls>
   <source src="travel.mp3" type="audio/mpeg">
 </audio>
+<p>
+MP3: compressed audio format, widely used because it reduces file size while keeping acceptable quality.
+</p>
 
-<!-- Video YouTube -->
-<h2>Video</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O4PmcP9ecE4?si=Dodk6wWPSOD8y8Up" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- VIDEO -->
+<h2>🎥 Video</h2>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+frameborder="0" allowfullscreen>
+</iframe>
+<p>
+Embedded video from YouTube, which saves space and loads faster than uploading video files.
+</p>
+
+</div>
 
 </body>
 </html>
