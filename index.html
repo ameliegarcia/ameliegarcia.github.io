@@ -4,100 +4,150 @@
 <meta charset="UTF-8">
 <title>Amelie Carrillo - Travel in Europe</title>
 
-<!-- Google Font (FÁCIL) -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
 <style>
+
+/* ✅ CUSTOM FONT (TTF) */
+@font-face {
+    font-family: "MyFont";
+    src: url("font.ttf") format("truetype");
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #89f7fe, #66a6ff);
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);
+    color: white;
+}
+
+/* HEADER */
+header {
     text-align: center;
+    padding: 60px 20px;
 }
 
+header h1 {
+    font-family: "MyFont", sans-serif;
+    font-size: 55px;
+    margin: 0;
+}
+
+header p {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+/* GRID */
 .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* CARDS */
+.card {
     background: white;
-    margin: 40px auto;
-    padding: 25px;
-    width: 80%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
 }
 
-h1 {
-    font-size: 45px;
-    color: #333;
+.card:hover {
+    transform: translateY(-10px);
 }
 
+/* IMAGES */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* TEXT */
 h2 {
-    color: #555;
+    margin-bottom: 10px;
 }
 
-img {
-    border-radius: 12px;
-    margin: 10px;
-    max-width: 90%;
+audio {
+    width: 100%;
+    margin-top: 10px;
 }
 
-p {
-    font-size: 16px;
+iframe {
+    width: 100%;
+    border-radius: 10px;
 }
+
 </style>
 
 </head>
 
 <body>
 
+<header>
+    <h1>Amelie Carrillo</h1>
+    <p>Exploring Europe through multimedia 🌍</p>
+
+    <!-- ✅ EXPLANATION FOR FONT -->
+    <p>
+    Custom font (TTF - TrueType Font): widely supported format used to create unique typography on web pages.
+    </p>
+</header>
+
 <div class="container">
 
-<h1>Amelie Carrillo</h1>
-<p>Exploring Europe through images, sound and media</p>
-
 <!-- PHOTO -->
-<h2>📸 Travel Photo</h2>
-<img src="budapest.jpg">
-<p>
-JPG format: compressed image, good quality with smaller file size. Ideal for photography.<br>
-HDR image (hdr.jpg): High Dynamic Range allows better light and color details, making photos look more realistic.
-</p>
-
-<img src="hdr.jpg">
+<div class="card">
+    <h2>📸 Budapest</h2>
+    <img src="budapest.jpg">
+    <img src="hdr.jpg">
+    <p>
+    JPG: compressed format, ideal for photos because it reduces file size.<br>
+    HDR: High Dynamic Range improves light and color details for more realistic images.
+    </p>
+</div>
 
 <!-- GRAPHICS -->
-<h2>🎨 Graphics</h2>
-<img src="graph.webp" width="300">
-<img src="logo.png" width="200">
-<p>
-WEBP: modern format, smaller size with high quality (used for web performance).<br>
-PNG: high quality image with transparency support, ideal for logos.<br>
-Graphics formats are useful for design elements and visual communication.
-</p>
+<div class="card">
+    <h2>🎨 Graphics</h2>
+    <img src="graph.webp">
+    <img src="logo.png">
+    <p>
+    WEBP: modern format with high quality and small size.<br>
+    PNG: high quality format with transparency, perfect for logos.
+    </p>
+</div>
 
 <!-- GIF -->
-<h2>🎞️ Animation</h2>
-<img src="travel.gif" width="300">
-<p>
-GIF: supports animation, commonly used for short loops and visual effects.
-</p>
+<div class="card">
+    <h2>🎞️ Animation</h2>
+    <img src="travel.gif">
+    <p>
+    GIF: supports animation, used for short visual loops and dynamic content.
+    </p>
+</div>
 
 <!-- AUDIO -->
-<h2>🔊 Sound</h2>
-<audio controls>
-  <source src="travel.mp3" type="audio/mpeg">
-</audio>
-<p>
-MP3: compressed audio format, widely used because it reduces file size while keeping acceptable quality.
-</p>
+<div class="card">
+    <h2>🔊 Travel Sound</h2>
+    <audio controls>
+        <source src="travel.mp3" type="audio/mpeg">
+    </audio>
+    <p>
+    MP3: compressed audio format, widely used for web due to its small size.
+    </p>
+</div>
 
 <!-- VIDEO -->
-<h2>🎥 Video</h2>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-frameborder="0" allowfullscreen>
-</iframe>
-<p>
-Embedded video from YouTube, which saves space and loads faster than uploading video files.
-</p>
+<div class="card">
+    <h2>🎥 Travel Video</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    <p>
+    Embedded YouTube video to save storage and improve loading speed.
+    </p>
+</div>
 
 </div>
 
